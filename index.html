@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carlos Daniel Gomes de Sá | Portfólio Profissional</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portfólio profissional de Carlos Daniel Gomes de Sá - Estudante de Ciência da Computação (UVV) e Suporte de TI na Secretaria de Saúde.">
+  <meta name="keywords"
+    content="Carlos Daniel, Ciência da Computação, Suporte de TI, Estruturas de Dados, Algoritmos, Portfólio, UVV">
+  <meta name="author" content="Carlos Daniel Gomes de Sá">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Carlos Daniel Gomes de Sá | Portfólio Profissional">
+  <meta property="og:description"
+    content="Estudante de Ciência da Computação e Suporte de TI. Conheça meus projetos, habilidades e trajetória.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- FontAwesome 6 (Icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Canvas Interativo de Fundo Tecnológico (Constellation / Cyber Nodes) -->
+  <canvas id="techCanvas" class="tech-canvas" aria-hidden="true"></canvas>
+
+  <!-- Efeito de Luzes de Fundo (Background Glows) -->
+  <div class="bg-glow bg-glow-1" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow-2" aria-hidden="true"></div>
+
+  <!-- 1. HEADER / NAVBAR -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="logo" aria-label="Página Inicial">
+        <span class="logo-bracket">&lt;</span>Carlos Daniel<span class="logo-accent">/&gt;</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+          <li class="nav-item"><a href="#habilidades" class="nav-link">Habilidades</a></li>
+          <li class="nav-item"><a href="#experiencia" class="nav-link">Experiência</a></li>
+          <li class="nav-item"><a href="#educacao" class="nav-link">Educação</a></li>
+          <li class="nav-item"><a href="#projetos" class="nav-link">Projetos</a></li>
+          <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+        <div class="nav-social-mobile">
+          <a href="https://github.com/Carlosdsa2005" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
+              class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i
+              class="fa-brands fa-linkedin"></i></a>
+          <a href="mailto:contato@exemplo.com" aria-label="E-mail"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </nav>
+
+      <!-- Botão Hambúrguer Mobile -->
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir Menu de Navegação" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- 2. HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content fade-in">
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span>Disponível para novos desafios e projetos</span>
+          </div>
+
+          <h1 class="hero-title">
+            Olá, me chamo <br>
+            <span class="text-gradient">Carlos Daniel Gomes de Sá</span>
+          </h1>
+
+          <h2 class="hero-subtitle">
+            Estudante de Ciência da Computação <span class="divider">|</span> Suporte de TI
+          </h2>
+
+          <p class="hero-description">
+            Unindo a precisão analítica em algoritmos e estruturas de dados com a vivência prática de estabilização de
+            infraestrutura tecnológica e suporte de redes.
+          </p>
+
+          <div class="hero-actions">
+            <button type="button" class="btn btn-primary" id="btnDownloadCv">
+              <i class="fa-solid fa-file-lines"></i>
+              <span>Visualizar Currículo</span>
+            </button>
+            <a href="#contato" class="btn btn-secondary">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>Fale Comigo</span>
+            </a>
+            <a href="https://github.com/Carlosdsa2005" target="_blank" rel="noopener noreferrer" class="btn btn-ghost"
+              title="Acessar Perfil no GitHub">
+              <i class="fa-brands fa-github"></i>
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual fade-in">
+          <!-- Terminal Interativo Moderno -->
+          <div class="terminal-card">
+            <div class="terminal-header">
+              <span class="terminal-circle red" title="Fechar"></span>
+              <span class="terminal-circle yellow" title="Minimizar"></span>
+              <span class="terminal-circle green" title="Maximizar"></span>
+              <span class="terminal-title">carlos_daniel.dev ~ bash (interativo)</span>
+            </div>
+
+            <!-- Chips de Comandos Rápidos -->
+            <div class="terminal-chips-bar" aria-label="Comandos Rápidos">
+              <span class="chips-label">Atalhos:</span>
+              <button type="button" class="term-chip" data-cmd="help">help</button>
+              <button type="button" class="term-chip" data-cmd="skills">skills</button>
+              <button type="button" class="term-chip" data-cmd="projects">projects</button>
+              <button type="button" class="term-chip" data-cmd="contact">contact</button>
+              <button type="button" class="term-chip" data-cmd="clear">clear</button>
+            </div>
+
+            <div class="terminal-body" id="terminalBody">
+              <div id="terminalHistory">
+                <p><span class="term-prompt">$</span> <span class="term-cmd">whoami</span></p>
+                <p class="term-output">Carlos Daniel Gomes de Sá - Ciência da Computação @ UVV & Suporte TI</p>
+
+                <p><span class="term-prompt">$</span> <span class="term-cmd">cat profile.json</span></p>
+                <pre class="term-code"><code>{
+  "curso": "Ciência da Computação (UVV)",
+  "periodo": "6º Período",
+  "atuacao": "Suporte de TI (Secretaria de Saúde)",
+  "interesses": ["Estruturas de Dados", "Algoritmos", "Redes & Hardware", "Full Stack"],
+  "dica": "Digite 'help' abaixo ou clique em um atalho para navegar interativamente!"
+}</code></pre>
+              </div>
+
+              <!-- Linha de Entrada do Terminal -->
+              <form id="terminalForm" class="term-input-line" onsubmit="return false;">
+                <span class="term-prompt">$</span>
+                <input type="text" id="termInput" class="term-input" placeholder="digite um comando..."
+                  autocomplete="off" spellcheck="false" aria-label="Linha de comando do terminal interativo">
+                <button type="submit" class="term-run-btn" title="Executar comando" aria-label="Executar comando">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SOBRE MIM -->
+    <section class="section about-section" id="sobre">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">Perfil</span>
+          <h2 class="section-title">Sobre Mim</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card-main glass-card fade-in">
+            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+            <p class="about-text">
+              Sou estudante de Ciência da Computação na Universidade Vila Velha (UVV) e atualmente atuo no Suporte de TI
+              da Secretaria de Saúde. Essa vivência diária tem me proporcionado uma base muito forte em resolução rápida
+              de problemas, manutenção de infraestrutura e estabilização de sistemas críticos. Ao mesmo tempo, tenho uma
+              paixão profunda pela lógica e pelos bastidores da tecnologia, dedicando-me ao estudo de estruturas de
+              dados, matemática computacional, redes e desenvolvimento de software. Fora da tecnologia, gosto de
+              aproveitar meu tempo pedalando e explorando novos universos no videogame.
+            </p>
+          </div>
+
+          <div class="about-highlights-grid">
+            <div class="highlight-card glass-card fade-in">
+              <div class="highlight-icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <div class="highlight-info">
+                <h3>Universidade Vila Velha</h3>
+                <p>Bacharelado em Ciência da Computação</p>
+              </div>
+            </div>
+
+            <div class="highlight-card glass-card fade-in">
+              <div class="highlight-icon">
+                <i class="fa-solid fa-server"></i>
+              </div>
+              <div class="highlight-info">
+                <h3>Suporte de TI</h3>
+                <p>Secretaria de Saúde - Infraestrutura & Manutenção</p>
+              </div>
+            </div>
+
+            <div class="highlight-card glass-card fade-in">
+              <div class="highlight-icon">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <div class="highlight-info">
+                <h3>Foco Analítico</h3>
+                <p>Estruturas de Dados, Algoritmos e Lógica de Otimização</p>
+              </div>
+            </div>
+
+            <div class="highlight-card glass-card fade-in">
+              <div class="highlight-icon">
+                <i class="fa-solid fa-gamepad"></i>
+              </div>
+              <div class="highlight-info">
+                <h3>Hobbies & Paixões</h3>
+                <p>Ciclismo ao ar livre e jogos eletrônicos</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. HABILIDADES -->
+    <section class="section skills-section" id="habilidades">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">Competências</span>
+          <h2 class="section-title">Habilidades Técnicas</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Categoria 1 -->
+          <div class="skill-category-card glass-card fade-in">
+            <div class="category-header">
+              <div class="category-icon-box">
+                <i class="fa-solid fa-diagram-project"></i>
+              </div>
+              <div>
+                <h3 class="category-title">Fundamentos e Algoritmos</h3>
+                <p class="category-subtitle">Bases sólidas de lógica e computação</p>
+              </div>
+            </div>
+            <div class="tags-container">
+              <span class="skill-tag"><i class="fa-solid fa-network-wired"></i> Estruturas de Dados</span>
+              <span class="skill-tag"><i class="fa-solid fa-sitemap"></i> Árvores AVL</span>
+              <span class="skill-tag"><i class="fa-solid fa-link"></i> Listas Encadeadas</span>
+              <span class="skill-tag"><i class="fa-solid fa-arrow-down-short-wide"></i> Algoritmos de Ordenação</span>
+              <span class="skill-tag"><i class="fa-solid fa-chart-line"></i> Complexidade Big-O</span>
+              <span class="skill-tag"><i class="fa-solid fa-square-root-variable"></i> Teoria da Computação</span>
+            </div>
+          </div>
+
+          <!-- Categoria 2 -->
+          <div class="skill-category-card glass-card fade-in">
+            <div class="category-header">
+              <div class="category-icon-box">
+                <i class="fa-solid fa-microchip"></i>
+              </div>
+              <div>
+                <h3 class="category-title">Hardware e Infraestrutura</h3>
+                <p class="category-subtitle">Montagem, estabilidade física e conectividade</p>
+              </div>
+            </div>
+            <div class="tags-container">
+              <span class="skill-tag"><i class="fa-solid fa-wrench"></i> Manutenção de Hardware</span>
+              <span class="skill-tag"><i class="fa-solid fa-desktop"></i> Montagem de Alto Desempenho</span>
+              <span class="skill-tag"><i class="fa-solid fa-stethoscope"></i> Diagnóstico de Falhas</span>
+              <span class="skill-tag"><i class="fa-solid fa-ethernet"></i> Redes de Computadores</span>
+              <span class="skill-tag"><i class="fa-solid fa-route"></i> Roteamento & TCP/IP</span>
+              <span class="skill-tag"><i class="fa-solid fa-headset"></i> Atendimento Help Desk N1/N2</span>
+            </div>
+          </div>
+
+          <!-- Categoria 3 -->
+          <div class="skill-category-card glass-card fade-in">
+            <div class="category-header">
+              <div class="category-icon-box">
+                <i class="fa-solid fa-toolbox"></i>
+              </div>
+              <div>
+                <h3 class="category-title">Linguagens & Ferramentas</h3>
+                <p class="category-subtitle">Sistemas, versionamento e automação</p>
+              </div>
+            </div>
+            <div class="tags-container">
+              <span class="skill-tag"><i class="fa-brands fa-python"></i> Python</span>
+              <span class="skill-tag"><i class="fa-solid fa-c"></i> C / C++</span>
+              <span class="skill-tag"><i class="fa-brands fa-java"></i> Java</span>
+              <span class="skill-tag"><i class="fa-brands fa-js"></i> JavaScript</span>
+              <span class="skill-tag"><i class="fa-brands fa-git-alt"></i> Git & GitHub</span>
+              <span class="skill-tag"><i class="fa-brands fa-linux"></i> Linux / Bash Scripting</span>
+              <span class="skill-tag"><i class="fa-brands fa-windows"></i> Windows Server & AD</span>
+              <span class="skill-tag"><i class="fa-solid fa-wand-magic-sparkles"></i> IA para Produtividade</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. EXPERIÊNCIA -->
+    <section class="section experience-section" id="experiencia">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">Trajetória</span>
+          <h2 class="section-title">Experiência Profissional</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="timeline-container">
+          <div class="timeline-item fade-in">
+            <div class="timeline-marker">
+              <div class="timeline-dot"></div>
+              <div class="timeline-line"></div>
+            </div>
+
+            <div class="timeline-content glass-card">
+              <div class="timeline-header-block">
+                <div>
+                  <h3 class="timeline-role">Suporte de TI</h3>
+                  <h4 class="timeline-company"><i class="fa-solid fa-building"></i> Secretaria de Saúde</h4>
+                </div>
+                <span class="timeline-badge"><i class="fa-solid fa-circle-check"></i> Em atividade</span>
+              </div>
+
+              <p class="timeline-desc">
+                Responsável por garantir o funcionamento ininterrupto da infraestrutura tecnológica da secretaria,
+                prestando atendimento ágil a chamados de help desk, manutenção de hardwares, configuração de pontos de
+                rede e suporte aos usuários em ambientes operacionais críticos.
+              </p>
+
+              <div class="timeline-tags">
+                <span><i class="fa-solid fa-check"></i> Suporte N1/N2</span>
+                <span><i class="fa-solid fa-check"></i> Manutenção de Hardware</span>
+                <span><i class="fa-solid fa-check"></i> Infraestrutura & Redes</span>
+                <span><i class="fa-solid fa-check"></i> Configuração de SOs</span>
+                <span><i class="fa-solid fa-check"></i> Help Desk</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. EDUCAÇÃO -->
+    <section class="section education-section" id="educacao">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">Formação</span>
+          <h2 class="section-title">Educação Acadêmica</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="education-grid">
+          <div class="education-card glass-card fade-in">
+            <div class="education-icon-wrapper">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+
+            <div class="education-details">
+              <span class="edu-period">Graduação em Andamento • UVV</span>
+              <h3 class="edu-degree">Bacharelado em Ciência da Computação</h3>
+              <h4 class="edu-institution">
+                <i class="fa-solid fa-school"></i> Universidade Vila Velha (UVV)
+              </h4>
+
+              <div class="edu-highlight-box">
+                <div class="edu-highlight-title">
+                  <i class="fa-solid fa-star text-accent"></i>
+                  <strong>Destaque Acadêmico:</strong>
+                </div>
+                <p class="edu-highlight-text">
+                  Execução contínua de Plano de Desenvolvimento Individual (PDI) focado no aprofundamento prático em
+                  estruturas de dados eficientes, algoritmos balanceados, sistemas operacionais e arquitetura de
+                  computadores.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. PROJETOS -->
+    <section class="section projects-section" id="projetos">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">Portfólio</span>
+          <h2 class="section-title">Projetos em Destaque</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <!-- Barra de Filtros por Categoria -->
+        <div class="projects-filter-bar fade-in" role="tablist" aria-label="Filtro de Projetos">
+          <button type="button" class="filter-btn active" data-filter="all">Todos</button>
+          <button type="button" class="filter-btn" data-filter="algorithms">Ciência da Computação</button>
+          <button type="button" class="filter-btn" data-filter="infra">Infraestrutura & Redes</button>
+          <button type="button" class="filter-btn" data-filter="web">Web & Front-End</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Card 1: Estruturas de Dados e Algoritmos -->
+          <article class="project-card glass-card fade-in" data-category="algorithms">
+            <div class="project-banner">
+              <div class="project-banner-overlay"></div>
+              <div class="project-icon-large">
+                <i class="fa-solid fa-code-branch"></i>
+              </div>
+              <span class="project-type-badge">Algoritmos & Estruturas</span>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">Estruturas de Dados e Algoritmos</h3>
+              <p class="project-description">
+                Implementações completas de Árvores AVL com balanceamento dinâmico, Listas Duplamente Encadeadas, Filas
+                Circulares e algoritmos de busca e ordenação rápida (QuickSort, MergeSort).
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-badge"><i class="fa-solid fa-c"></i> C</span>
+                <span class="tech-badge"><i class="fa-brands fa-java"></i> Java</span>
+                <span class="tech-badge"><i class="fa-brands fa-python"></i> Python</span>
+                <span class="tech-badge"><i class="fa-solid fa-gauge-high"></i> Big-O</span>
+              </div>
+
+              <div class="project-actions">
+                <button type="button" class="btn btn-card-secondary btn-project-detail" data-project="estruturas">
+                  <i class="fa-solid fa-circle-info"></i> Detalhes
+                </button>
+                <a href="https://github.com/Carlosdsa2005" target="_blank" rel="noopener noreferrer" class="btn btn-card-primary">
+                  <i class="fa-brands fa-github"></i> Código
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: NetPulse - Monitor e Diagnóstico de Redes -->
+          <article class="project-card glass-card fade-in" data-category="infra">
+            <div class="project-banner">
+              <div class="project-banner-overlay"></div>
+              <div class="project-icon-large">
+                <i class="fa-solid fa-network-wired"></i>
+              </div>
+              <span class="project-type-badge">Infraestrutura & Redes</span>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">NetPulse: Diagnóstico de Redes</h3>
+              <p class="project-description">
+                Ferramenta orientada a suporte técnico para varredura de sub-redes locais, auditoria de latência ICMP,
+                teste de conectividade de portas e geração de logs para resolução ágil de incidentes.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-badge"><i class="fa-brands fa-python"></i> Python</span>
+                <span class="tech-badge"><i class="fa-solid fa-terminal"></i> Bash/Shell</span>
+                <span class="tech-badge"><i class="fa-solid fa-server"></i> TCP/IP</span>
+                <span class="tech-badge"><i class="fa-brands fa-linux"></i> Linux</span>
+              </div>
+
+              <div class="project-actions">
+                <button type="button" class="btn btn-card-secondary btn-project-detail" data-project="netpulse">
+                  <i class="fa-solid fa-circle-info"></i> Detalhes
+                </button>
+                <a href="https://github.com/Carlosdsa2005" target="_blank" rel="noopener noreferrer" class="btn btn-card-primary">
+                  <i class="fa-brands fa-github"></i> Código
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Visualizador de Árvores AVL Interativo -->
+          <article class="project-card glass-card fade-in" data-category="algorithms">
+            <div class="project-banner">
+              <div class="project-banner-overlay"></div>
+              <div class="project-icon-large">
+                <i class="fa-solid fa-sitemap"></i>
+              </div>
+              <span class="project-type-badge">Computação Visual</span>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">Visualizador de Árvores AVL</h3>
+              <p class="project-description">
+                Simulador gráfico interativo de árvores binárias auto-balanceáveis. Demonstra visualmente nós, alturas e
+                o processo passo a passo das rotações simples (LL/RR) e duplas (LR/RL).
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-badge"><i class="fa-brands fa-js"></i> JavaScript</span>
+                <span class="tech-badge"><i class="fa-solid fa-bezier-curve"></i> Canvas API</span>
+                <span class="tech-badge"><i class="fa-brands fa-html5"></i> HTML5</span>
+                <span class="tech-badge"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+              </div>
+
+              <div class="project-actions">
+                <button type="button" class="btn btn-card-secondary btn-project-detail" data-project="avl">
+                  <i class="fa-solid fa-circle-info"></i> Detalhes
+                </button>
+                <a href="https://github.com/Carlosdsa2005" target="_blank" rel="noopener noreferrer" class="btn btn-card-primary">
+                  <i class="fa-brands fa-github"></i> Código
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Portfólio Web Pessoal -->
+          <article class="project-card glass-card fade-in" data-category="web">
+            <div class="project-banner">
+              <div class="project-banner-overlay"></div>
+              <div class="project-icon-large">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <span class="project-type-badge">Front-End & UI/UX</span>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">Portfólio Web Tecnológico</h3>
+              <p class="project-description">
+                Interface moderna com estética Glassmorphism, terminal interativo via JavaScript puro, animação com
+                Canvas de nós quânticos, sistema dinâmico de filtros e total responsividade.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-badge"><i class="fa-brands fa-html5"></i> HTML5</span>
+                <span class="tech-badge"><i class="fa-brands fa-css3-alt"></i> Vanilla CSS</span>
+                <span class="tech-badge"><i class="fa-brands fa-js"></i> JavaScript</span>
+                <span class="tech-badge"><i class="fa-solid fa-mobile-screen"></i> Responsivo</span>
+              </div>
+
+              <div class="project-actions">
+                <button type="button" class="btn btn-card-secondary btn-project-detail" data-project="portfolio">
+                  <i class="fa-solid fa-circle-info"></i> Detalhes
+                </button>
+                <a href="#hero" class="btn btn-card-primary">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. CONTATO -->
+    <section class="section contact-section" id="contato">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">Conexão</span>
+          <h2 class="section-title">Entre em Contato</h2>
+          <div class="section-line"></div>
+          <p class="section-subtitle">
+            Vamos conversar sobre oportunidades profissionais, projetos em tecnologia ou troca de experiências na área!
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Coluna 1: Informações e Acessos Diretos -->
+          <div class="contact-info-column fade-in">
+            <!-- Card de Disponibilidade -->
+            <div class="contact-card availability-card glass-card">
+              <div class="availability-status">
+                <span class="status-dot"></span>
+                <strong>Status Atual: Disponível</strong>
+              </div>
+              <p class="availability-text">
+                Aberto a propostas de estágio, oportunidades em engenharia de software, desenvolvimento e suporte
+                avançado de TI.
+              </p>
+            </div>
+
+            <!-- Cards de Contato Direto -->
+            <div class="direct-contacts-list">
+              <!-- E-mail -->
+              <div class="direct-contact-item glass-card">
+                <div class="direct-contact-icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="direct-contact-details">
+                  <span class="direct-label">E-mail Profissional</span>
+                  <a href="mailto:carlosdaniel.sa.dev@gmail.com" class="direct-link"
+                    id="contactEmailDisplay">carlosdaniel.sa.dev@gmail.com</a>
+                </div>
+                <button type="button" class="btn-copy-email" id="btnCopyEmail" title="Copiar e-mail"
+                  aria-label="Copiar e-mail para a área de transferência">
+                  <i class="fa-regular fa-copy"></i>
+                  <span>Copiar</span>
+                </button>
+              </div>
+
+              <!-- WhatsApp -->
+              <a href="https://wa.me/5527999999999?text=Ol%C3%A1%20Carlos%20Daniel,%20vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar!"
+                target="_blank" rel="noopener noreferrer"
+                class="direct-contact-item glass-card direct-contact-interactive">
+                <div class="direct-contact-icon whatsapp-icon">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="direct-contact-details">
+                  <span class="direct-label">WhatsApp</span>
+                  <span class="direct-link">Iniciar conversa direta</span>
+                </div>
+                <i class="fa-solid fa-arrow-up-right-from-square direct-arrow"></i>
+              </a>
+
+              <!-- LinkedIn -->
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+                class="direct-contact-item glass-card direct-contact-interactive">
+                <div class="direct-contact-icon linkedin-icon">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+                <div class="direct-contact-details">
+                  <span class="direct-label">LinkedIn</span>
+                  <span class="direct-link">Conectar no perfil profissional</span>
+                </div>
+                <i class="fa-solid fa-arrow-up-right-from-square direct-arrow"></i>
+              </a>
+
+              <!-- Localização -->
+              <div class="direct-contact-item glass-card">
+                <div class="direct-contact-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="direct-contact-details">
+                  <span class="direct-label">Localização</span>
+                  <span class="direct-link">Vila Velha - ES, Brasil</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Coluna 2: Formulário de Mensagem Direta -->
+          <div class="contact-form-column fade-in">
+            <div class="contact-form-wrapper glass-card">
+              <h3 class="form-title">
+                <i class="fa-solid fa-paper-plane text-accent"></i> Envie uma Mensagem
+              </h3>
+              <p class="form-desc">Preencha os campos abaixo e responderei com a máxima brevidade.</p>
+
+              <form id="contactForm" class="contact-form" novalidate>
+                <div class="form-group">
+                  <label for="contactName" class="form-label">Seu Nome *</label>
+                  <div class="input-container">
+                    <i class="fa-solid fa-user input-icon"></i>
+                    <input type="text" id="contactName" name="name" class="form-input" placeholder="Ex: Maria Silva"
+                      required>
+                  </div>
+                  <span class="form-error" id="nameError">Por favor, informe seu nome.</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="contactEmail" class="form-label">Seu E-mail *</label>
+                  <div class="input-container">
+                    <i class="fa-solid fa-envelope input-icon"></i>
+                    <input type="email" id="contactEmail" name="email" class="form-input"
+                      placeholder="Ex: seuemail@exemplo.com" required>
+                  </div>
+                  <span class="form-error" id="emailError">Informe um e-mail válido.</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="contactSubject" class="form-label">Assunto</label>
+                  <div class="input-container">
+                    <i class="fa-solid fa-tag input-icon"></i>
+                    <input type="text" id="contactSubject" name="subject" class="form-input"
+                      placeholder="Ex: Oportunidade profissional / Projeto">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="contactMessage" class="form-label">Mensagem *</label>
+                  <div class="input-container textarea-container">
+                    <i class="fa-solid fa-comment-dots input-icon textarea-icon"></i>
+                    <textarea id="contactMessage" name="message" class="form-input form-textarea" rows="4"
+                      placeholder="Escreva sua mensagem aqui..." required></textarea>
+                  </div>
+                  <span class="form-error" id="messageError">Por favor, digite sua mensagem.</span>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-submit-contact" id="btnSubmitContact">
+                  <span class="btn-text">Enviar Mensagem</span>
+                  <i class="fa-solid fa-paper-plane btn-icon"></i>
+                  <span class="spinner" aria-hidden="true"></span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 9. FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <a href="#hero" class="footer-logo">
+          &lt;Carlos Daniel<span class="logo-accent">/&gt;</span>
+        </a>
+        <p class="footer-tagline">Construindo soluções integrando lógica rigorosa, algoritmos eficientes e
+          infraestrutura sólida.</p>
+
+        <div class="footer-social-links">
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon"
+            aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/Carlosdsa2005" target="_blank" rel="noopener noreferrer" class="social-icon"
+            aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="mailto:carlosdaniel.sa.dev@gmail.com" class="social-icon" aria-label="E-mail">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+          <a href="https://wa.me/5527999999999" target="_blank" rel="noopener noreferrer" class="social-icon"
+            aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; 2026 Carlos Daniel Gomes de Sá. Todos os direitos reservados.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão Voltar ao Topo Flutuante -->
+  <a href="#hero" class="back-to-top" id="backToTop" aria-label="Voltar ao início">
+    <i class="fa-solid fa-chevron-up"></i>
+  </a>
+
+  <!-- =========================================================================
+       MODAL 1: CURRÍCULO RESUMIDO PROFISSIONAL
+       ========================================================================= -->
+  <div class="modal-backdrop" id="cvModalBackdrop" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-container glass-card" id="cvModalContainer">
+      <div class="modal-header">
+        <div class="modal-header-info">
+          <i class="fa-solid fa-file-lines modal-icon text-accent"></i>
+          <div>
+            <h3 class="modal-title">Currículo Profissional</h3>
+            <p class="modal-subtitle">Carlos Daniel Gomes de Sá • Ciência da Computação</p>
+          </div>
+        </div>
+        <button type="button" class="modal-close-btn" id="btnCloseCvModal" aria-label="Fechar modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="modal-body cv-printable-area">
+        <!-- Cabeçalho do CV -->
+        <div class="cv-header-block">
+          <h2 class="cv-name">Carlos Daniel Gomes de Sá</h2>
+          <p class="cv-headline">Estudante de Ciência da Computação (UVV) | Suporte de TI na Secretaria de Saúde</p>
+          <div class="cv-contact-inline">
+            <span><i class="fa-solid fa-location-dot"></i> Vila Velha - ES</span>
+            <span><i class="fa-solid fa-envelope"></i> carlosdaniel.sa.dev@gmail.com</span>
+            <span><i class="fa-brands fa-github"></i> github.com/Carlosdsa2005</span>
+            <span><i class="fa-brands fa-linkedin"></i> linkedin.com</span>
+          </div>
+        </div>
+
+        <!-- Resumo das Qualificações -->
+        <div class="cv-section">
+          <h4 class="cv-section-title"><i class="fa-solid fa-user-check"></i> Resumo Profissional</h4>
+          <p class="cv-text">
+            Acadêmico de Ciência da Computação com sólido domínio em fundamentos da computação, estruturas de dados
+            avançadas (Árvores AVL, Listas, Filas) e complexidade algorítmica. Atua no Suporte de TI da Secretaria de
+            Saúde, desenvolvendo habilidades de resolução rápida de incidentes N1/N2, diagnóstico avançado de hardware,
+            gestão de rede local e atendimento humanizado.
+          </p>
+        </div>
+
+        <!-- Formação Acadêmica -->
+        <div class="cv-section">
+          <h4 class="cv-section-title"><i class="fa-solid fa-graduation-cap"></i> Formação Acadêmica</h4>
+          <div class="cv-entry">
+            <div class="cv-entry-head">
+              <strong>Bacharelado em Ciência da Computação</strong>
+              <span class="cv-date">Previsão: 2027</span>
+            </div>
+            <p class="cv-sub">Universidade Vila Velha (UVV)</p>
+            <p class="cv-text">Enfoque em Estruturas de Dados, Análise de Algoritmos, Teoria da Computação, Arquitetura
+              de Sistemas e Redes.</p>
+          </div>
+        </div>
+
+        <!-- Experiência Profissional -->
+        <div class="cv-section">
+          <h4 class="cv-section-title"><i class="fa-solid fa-briefcase"></i> Experiência</h4>
+          <div class="cv-entry">
+            <div class="cv-entry-head">
+              <strong>Suporte de TI & Infraestrutura</strong>
+              <span class="cv-date">Atualmente em atividade</span>
+            </div>
+            <p class="cv-sub">Secretaria de Saúde</p>
+            <ul class="cv-list">
+              <li>Suporte técnico nível 1 e 2 para unidades administrativas e assistenciais.</li>
+              <li>Montagem, manutenção preventiva e corretiva de computadores e estações de trabalho.</li>
+              <li>Diagnóstico e resolução de incidentes de rede física e lógica, roteamento e impressoras.</li>
+              <li>Treinamento e suporte a usuários finais na utilização de softwares e sistemas de gestão.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Competências Técnicas -->
+        <div class="cv-section">
+          <h4 class="cv-section-title"><i class="fa-solid fa-code"></i> Principais Competências</h4>
+          <div class="cv-skills-cloud">
+            <span class="cv-skill-item">Estruturas de Dados (AVL, Listas, Grafos)</span>
+            <span class="cv-skill-item">Algoritmos de Ordenação & Big-O</span>
+            <span class="cv-skill-item">Python</span>
+            <span class="cv-skill-item">C / C++</span>
+            <span class="cv-skill-item">Java</span>
+            <span class="cv-skill-item">JavaScript (ES6+) & Web</span>
+            <span class="cv-skill-item">Hardware & Montagem de Alto Desempenho</span>
+            <span class="cv-skill-item">Redes de Computadores & TCP/IP</span>
+            <span class="cv-skill-item">Linux & Shell Scripting</span>
+            <span class="cv-skill-item">Git & Controle de Versão</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" id="btnCloseCvModalBottom">Fechar</button>
+        <button type="button" class="btn btn-primary" id="btnPrintCv">
+          <i class="fa-solid fa-print"></i>
+          <span>Imprimir / Salvar PDF</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       MODAL 2: DETALHES DE PROJETO (Dinâmico)
+       ========================================================================= -->
+  <div class="modal-backdrop" id="projectModalBackdrop" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-container glass-card" id="projectModalContainer">
+      <div class="modal-header">
+        <div class="modal-header-info">
+          <i class="fa-solid fa-folder-open modal-icon text-accent" id="modalProjectIcon"></i>
+          <div>
+            <h3 class="modal-title" id="modalProjectTitle">Detalhes do Projeto</h3>
+            <span class="project-type-badge" id="modalProjectBadge">Categoria</span>
+          </div>
+        </div>
+        <button type="button" class="modal-close-btn" id="btnCloseProjectModal" aria-label="Fechar detalhes do projeto">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="modal-body" id="modalProjectBody">
+        <!-- Conteúdo preenchido dinamicamente via JS -->
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" id="btnCloseProjectModalBottom">Fechar</button>
+        <a href="https://github.com/Carlosdsa2005" target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+          id="modalProjectLink">
+          <i class="fa-brands fa-github"></i>
+          <span>Ver Repositório no GitHub</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
