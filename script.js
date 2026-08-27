@@ -303,6 +303,7 @@ document.addEventListener('DOMContentLoaded', () => {
         outputBlock.innerHTML = `
           <div class="term-output">
             📧 E-mail: <span style="color: var(--accent-cyan);">carlosdaniel.sa.dev@gmail.com</span><br>
+            📱 WhatsApp: <span style="color: var(--accent-cyan);">(27) 99818-4143</span><br>
             📍 Localização: Vila Velha - ES, Brasil<br>
             💬 Rolando até a seção de contato...
           </div>
