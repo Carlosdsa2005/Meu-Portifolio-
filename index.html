@@ -29,6 +29,9 @@
   <!-- FontAwesome 6 (Icons) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
   <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
@@ -61,9 +64,9 @@
         <div class="nav-social-mobile">
           <a href="https://github.com/Carlosdsa2005" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
               class="fa-brands fa-github"></i></a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i
+          <a href="https://www.linkedin.com/in/carlos-daniel-gomes-de-sa-7217b1289" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i
               class="fa-brands fa-linkedin"></i></a>
-          <a href="mailto:contato@exemplo.com" aria-label="E-mail"><i class="fa-solid fa-envelope"></i></a>
+          <a href="mailto:carlosdsa2005@gmail.com" aria-label="E-mail"><i class="fa-solid fa-envelope"></i></a>
         </div>
       </nav>
 
@@ -92,7 +95,7 @@
           </h1>
 
           <h2 class="hero-subtitle">
-            Estudante de Ciência da Computação <span class="divider">|</span> Suporte de TI
+            <span id="typedText"></span><span class="typed-cursor">|</span>
           </h2>
 
           <p class="hero-description">
@@ -167,6 +170,34 @@
       </div>
     </section>
 
+    <!-- 2.5. MÉTRICAS / CONTADORES ANIMADOS -->
+    <section class="metrics-section" id="metricas">
+      <div class="container">
+        <div class="metrics-grid">
+          <div class="metric-card fade-in" data-delay="1">
+            <div class="metric-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="metric-value"><span class="counter" data-target="6">0</span>º</div>
+            <div class="metric-label">Período em Ciência da Computação</div>
+          </div>
+          <div class="metric-card fade-in" data-delay="2">
+            <div class="metric-icon"><i class="fa-solid fa-code-branch"></i></div>
+            <div class="metric-value"><span class="counter" data-target="6">0</span>+</div>
+            <div class="metric-label">Projetos Desenvolvidos</div>
+          </div>
+          <div class="metric-card fade-in" data-delay="3">
+            <div class="metric-icon"><i class="fa-solid fa-microchip"></i></div>
+            <div class="metric-value"><span class="counter" data-target="8">0</span>+</div>
+            <div class="metric-label">Tecnologias Dominadas</div>
+          </div>
+          <div class="metric-card fade-in" data-delay="4">
+            <div class="metric-icon"><i class="fa-solid fa-server"></i></div>
+            <div class="metric-value"><span class="counter" data-target="1">0</span>+</div>
+            <div class="metric-label">Ano de Experiência em TI</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- 3. SOBRE MIM -->
     <section class="section about-section" id="sobre">
       <div class="container">
@@ -185,12 +216,12 @@
               de problemas, manutenção de infraestrutura e estabilização de sistemas críticos. Ao mesmo tempo, tenho uma
               paixão profunda pela lógica e pelos bastidores da tecnologia, dedicando-me ao estudo de estruturas de
               dados, matemática computacional, redes e desenvolvimento de software. Fora da tecnologia, gosto de
-              aproveitar meu tempo pedalando e explorando novos universos no videogame.
+              aproveitar meu tempo explorando novos universos no videogame.
             </p>
           </div>
 
           <div class="about-highlights-grid">
-            <div class="highlight-card glass-card fade-in">
+            <div class="highlight-card glass-card fade-in" data-delay="1">
               <div class="highlight-icon">
                 <i class="fa-solid fa-graduation-cap"></i>
               </div>
@@ -200,7 +231,7 @@
               </div>
             </div>
 
-            <div class="highlight-card glass-card fade-in">
+            <div class="highlight-card glass-card fade-in" data-delay="2">
               <div class="highlight-icon">
                 <i class="fa-solid fa-server"></i>
               </div>
@@ -210,7 +241,7 @@
               </div>
             </div>
 
-            <div class="highlight-card glass-card fade-in">
+            <div class="highlight-card glass-card fade-in" data-delay="3">
               <div class="highlight-icon">
                 <i class="fa-solid fa-brain"></i>
               </div>
@@ -220,13 +251,13 @@
               </div>
             </div>
 
-            <div class="highlight-card glass-card fade-in">
+            <div class="highlight-card glass-card fade-in" data-delay="4">
               <div class="highlight-icon">
                 <i class="fa-solid fa-gamepad"></i>
               </div>
               <div class="highlight-info">
                 <h3>Hobbies & Paixões</h3>
-                <p>Ciclismo ao ar livre e jogos eletrônicos</p>
+                <p>Jogos eletrônicos e exploração de novas tecnologias</p>
               </div>
             </div>
           </div>
@@ -298,12 +329,14 @@
               </div>
             </div>
             <div class="tags-container">
-              <span class="skill-tag"><i class="fa-brands fa-python"></i> Python</span>
+              <span class="skill-tag"><i class="fa-brands fa-java"></i> Java (Spring Boot)</span>
+              <span class="skill-tag"><i class="fa-brands fa-python"></i> Python (Flask)</span>
+              <span class="skill-tag"><i class="fa-solid fa-bolt"></i> Redis & Cache</span>
+              <span class="skill-tag"><i class="fa-brands fa-docker"></i> Docker & Compose</span>
               <span class="skill-tag"><i class="fa-solid fa-c"></i> C / C++</span>
-              <span class="skill-tag"><i class="fa-brands fa-java"></i> Java</span>
               <span class="skill-tag"><i class="fa-brands fa-js"></i> JavaScript</span>
               <span class="skill-tag"><i class="fa-brands fa-git-alt"></i> Git & GitHub</span>
-              <span class="skill-tag"><i class="fa-brands fa-linux"></i> Linux / Bash Scripting</span>
+              <span class="skill-tag"><i class="fa-brands fa-linux"></i> Linux & Bash</span>
               <span class="skill-tag"><i class="fa-brands fa-windows"></i> Windows Server & AD</span>
               <span class="skill-tag"><i class="fa-solid fa-wand-magic-sparkles"></i> IA para Produtividade</span>
             </div>
@@ -395,6 +428,46 @@
       </div>
     </section>
 
+    <!-- 6.5. CERTIFICAÇÕES & CURSOS -->
+    <section class="section certifications-section" id="certificacoes">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">Qualificações</span>
+          <h2 class="section-title">Certificações & Cursos</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="certifications-grid">
+          <div class="cert-card glass-card fade-in" data-delay="1">
+            <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
+            <div class="cert-details">
+              <h3 class="cert-name">Lógica de Programação</h3>
+              <p class="cert-institution">Curso Complementar</p>
+              <span class="cert-year">2024</span>
+            </div>
+          </div>
+
+          <div class="cert-card glass-card fade-in" data-delay="2">
+            <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
+            <div class="cert-details">
+              <h3 class="cert-name">Redes de Computadores</h3>
+              <p class="cert-institution">Curso Complementar</p>
+              <span class="cert-year">2024</span>
+            </div>
+          </div>
+
+          <div class="cert-card glass-card fade-in" data-delay="3">
+            <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
+            <div class="cert-details">
+              <h3 class="cert-name">Estruturas de Dados em C</h3>
+              <p class="cert-institution">Projeto Acadêmico (UVV)</p>
+              <span class="cert-year">2025</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- 7. PROJETOS -->
     <section class="section projects-section" id="projetos">
       <div class="container">
@@ -407,27 +480,213 @@
         <!-- Barra de Filtros por Categoria -->
         <div class="projects-filter-bar fade-in" role="tablist" aria-label="Filtro de Projetos">
           <button type="button" class="filter-btn active" data-filter="all">Todos</button>
+          <button type="button" class="filter-btn" data-filter="backend">Backend & Microsserviços</button>
+          <button type="button" class="filter-btn" data-filter="web">Web & Fullstack</button>
           <button type="button" class="filter-btn" data-filter="algorithms">Ciência da Computação</button>
-          <button type="button" class="filter-btn" data-filter="infra">Infraestrutura & Redes</button>
-          <button type="button" class="filter-btn" data-filter="web">Web & Front-End</button>
         </div>
 
         <div class="projects-grid">
-          <!-- Card 1: Estruturas de Dados e Algoritmos -->
+          <!-- Card 1: BoraJunto -->
+          <article class="project-card glass-card fade-in" data-category="web">
+            <div class="project-banner">
+              <div class="project-banner-overlay"></div>
+              <div class="project-icon-large">
+                <i class="fa-solid fa-plane-departure"></i>
+              </div>
+              <span class="project-type-badge">Fullstack & Colaborativo</span>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">BoraJunto: Planejador de Viagens</h3>
+              <p class="project-description">
+                Plataforma web colaborativa completa para organização e registro de viagens em grupo. Centraliza membros,
+                mural logístico de tarefas com responsáveis, upload de comprovantes, galeria de fotos, convites protegidos
+                por link e painel administrativo corporativo (CRUD).
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-badge"><i class="fa-brands fa-python"></i> Python</span>
+                <span class="tech-badge"><i class="fa-solid fa-flask"></i> Flask</span>
+                <span class="tech-badge"><i class="fa-solid fa-database"></i> SQLAlchemy</span>
+                <span class="tech-badge"><i class="fa-brands fa-bootstrap"></i> Bootstrap 5</span>
+                <span class="tech-badge"><i class="fa-solid fa-vial-circle-check"></i> Pytest</span>
+              </div>
+
+              <div class="project-actions">
+                <button type="button" class="btn btn-card-secondary btn-project-detail" data-project="borajunto">
+                  <i class="fa-solid fa-circle-info"></i> Detalhes
+                </button>
+                <a href="https://github.com/Carlosdsa2005/Bora_Junto" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-card-primary">
+                  <i class="fa-brands fa-github"></i> Código
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Encurtador de URL com Cache em Redis -->
+          <article class="project-card glass-card fade-in" data-category="backend">
+            <div class="project-banner">
+              <div class="project-banner-overlay"></div>
+              <div class="project-icon-large">
+                <i class="fa-solid fa-bolt"></i>
+              </div>
+              <span class="project-type-badge">Microsserviços & Cache</span>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">Encurtador de URL com Redis</h3>
+              <p class="project-description">
+                Microsserviço escalável de alta performance para encurtamento dinâmico e redirecionamento de links. Aplica
+                camada de cache distribuído em memória com Redis para acelerar requisições e minimizar latência de I/O,
+                empacotado com Docker Compose.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-badge"><i class="fa-brands fa-java"></i> Java</span>
+                <span class="tech-badge"><i class="fa-solid fa-leaf"></i> Spring Boot</span>
+                <span class="tech-badge"><i class="fa-solid fa-bolt"></i> Redis Cache</span>
+                <span class="tech-badge"><i class="fa-brands fa-docker"></i> Docker Compose</span>
+                <span class="tech-badge"><i class="fa-solid fa-network-wired"></i> REST API</span>
+              </div>
+
+              <div class="project-actions">
+                <button type="button" class="btn btn-card-secondary btn-project-detail" data-project="encurtador">
+                  <i class="fa-solid fa-circle-info"></i> Detalhes
+                </button>
+                <a href="https://github.com/Carlosdsa2005/Encurtador-de-URL-com-cache-em-Redis" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-card-primary">
+                  <i class="fa-brands fa-github"></i> Código
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: YouTube Clone Backend -->
+          <article class="project-card glass-card fade-in" data-category="backend">
+            <div class="project-banner">
+              <div class="project-banner-overlay"></div>
+              <div class="project-icon-large">
+                <i class="fa-brands fa-youtube"></i>
+              </div>
+              <span class="project-type-badge">Streaming & Arquitetura</span>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">YouTube Clone Backend</h3>
+              <p class="project-description">
+                API corporativa para plataforma audiovisual inspirada na arquitetura do YouTube. Gerencia catálogo de
+                vídeos, autenticação de criadores, upload de arquivos multimídia, metadados e fluxo de streaming sob
+                microsserviços conteinerizados.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-badge"><i class="fa-brands fa-java"></i> Java</span>
+                <span class="tech-badge"><i class="fa-solid fa-leaf"></i> Spring Boot</span>
+                <span class="tech-badge"><i class="fa-solid fa-shield-halved"></i> Spring Security</span>
+                <span class="tech-badge"><i class="fa-brands fa-docker"></i> Docker</span>
+              </div>
+
+              <div class="project-actions">
+                <button type="button" class="btn btn-card-secondary btn-project-detail" data-project="youtube">
+                  <i class="fa-solid fa-circle-info"></i> Detalhes
+                </button>
+                <a href="https://github.com/Carlosdsa2005/youtube-clone" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-card-primary">
+                  <i class="fa-brands fa-github"></i> Código
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: WhatsApp Clone Backend -->
+          <article class="project-card glass-card fade-in" data-category="backend">
+            <div class="project-banner">
+              <div class="project-banner-overlay"></div>
+              <div class="project-icon-large">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <span class="project-type-badge">Mensageria & Real-time</span>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">WhatsApp Clone Backend</h3>
+              <p class="project-description">
+                Serviço de backend para chat e comunicação em tempo real. Modela troca de mensagens instantâneas entre
+                usuários e em grupos, persistência estruturada de conversas, controle de conexões e ambiente configurado
+                via Docker Compose.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-badge"><i class="fa-brands fa-java"></i> Java</span>
+                <span class="tech-badge"><i class="fa-solid fa-leaf"></i> Spring Boot</span>
+                <span class="tech-badge"><i class="fa-solid fa-comments"></i> WebSockets / REST</span>
+                <span class="tech-badge"><i class="fa-brands fa-docker"></i> Docker Compose</span>
+              </div>
+
+              <div class="project-actions">
+                <button type="button" class="btn btn-card-secondary btn-project-detail" data-project="whatsapp">
+                  <i class="fa-solid fa-circle-info"></i> Detalhes
+                </button>
+                <a href="https://github.com/Carlosdsa2005/Whatsapp-Clone" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-card-primary">
+                  <i class="fa-brands fa-github"></i> Código
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5: Portfólio Web Pessoal -->
+          <article class="project-card glass-card fade-in" data-category="web">
+            <div class="project-banner">
+              <div class="project-banner-overlay"></div>
+              <div class="project-icon-large">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <span class="project-type-badge">Front-End & UI/UX</span>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">Portfólio Web Tecnológico</h3>
+              <p class="project-description">
+                Interface moderna com estética clean, paleta esmeralda e branca, terminal interativo via JavaScript puro,
+                animação com Canvas de nós quânticos, sistema dinâmico de filtros por categoria e total responsividade.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-badge"><i class="fa-brands fa-html5"></i> HTML5</span>
+                <span class="tech-badge"><i class="fa-brands fa-css3-alt"></i> Vanilla CSS</span>
+                <span class="tech-badge"><i class="fa-brands fa-js"></i> JavaScript</span>
+                <span class="tech-badge"><i class="fa-solid fa-terminal"></i> Terminal CLI</span>
+              </div>
+
+              <div class="project-actions">
+                <button type="button" class="btn btn-card-secondary btn-project-detail" data-project="portfolio">
+                  <i class="fa-solid fa-circle-info"></i> Detalhes
+                </button>
+                <a href="https://github.com/Carlosdsa2005/Meu-Portifolio-" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-card-primary">
+                  <i class="fa-brands fa-github"></i> Código
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6: Estruturas de Dados e Algoritmos -->
           <article class="project-card glass-card fade-in" data-category="algorithms">
             <div class="project-banner">
               <div class="project-banner-overlay"></div>
               <div class="project-icon-large">
                 <i class="fa-solid fa-code-branch"></i>
               </div>
-              <span class="project-type-badge">Algoritmos & Estruturas</span>
+              <span class="project-type-badge">Ciência da Computação</span>
             </div>
 
             <div class="project-content">
-              <h3 class="project-title">Estruturas de Dados e Algoritmos</h3>
+              <h3 class="project-title">Estruturas de Dados & Algoritmos</h3>
               <p class="project-description">
-                Implementações completas de Árvores AVL com balanceamento dinâmico, Listas Duplamente Encadeadas, Filas
-                Circulares e algoritmos de busca e ordenação rápida (QuickSort, MergeSort).
+                Implementações completas de Árvores AVL com balanceamento dinâmico rigoroso, Listas Duplamente Encadeadas,
+                Filas Circulares e algoritmos de busca e ordenação rápida (QuickSort, MergeSort) desenvolvidas na UVV.
               </p>
 
               <div class="project-tech-stack">
@@ -443,114 +702,7 @@
                 </button>
                 <a href="https://github.com/Carlosdsa2005" target="_blank" rel="noopener noreferrer"
                   class="btn btn-card-primary">
-                  <i class="fa-brands fa-github"></i> Código
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Card 2: NetPulse - Monitor e Diagnóstico de Redes -->
-          <article class="project-card glass-card fade-in" data-category="infra">
-            <div class="project-banner">
-              <div class="project-banner-overlay"></div>
-              <div class="project-icon-large">
-                <i class="fa-solid fa-network-wired"></i>
-              </div>
-              <span class="project-type-badge">Infraestrutura & Redes</span>
-            </div>
-
-            <div class="project-content">
-              <h3 class="project-title">NetPulse: Diagnóstico de Redes</h3>
-              <p class="project-description">
-                Ferramenta orientada a suporte técnico para varredura de sub-redes locais, auditoria de latência ICMP,
-                teste de conectividade de portas e geração de logs para resolução ágil de incidentes.
-              </p>
-
-              <div class="project-tech-stack">
-                <span class="tech-badge"><i class="fa-brands fa-python"></i> Python</span>
-                <span class="tech-badge"><i class="fa-solid fa-terminal"></i> Bash/Shell</span>
-                <span class="tech-badge"><i class="fa-solid fa-server"></i> TCP/IP</span>
-                <span class="tech-badge"><i class="fa-brands fa-linux"></i> Linux</span>
-              </div>
-
-              <div class="project-actions">
-                <button type="button" class="btn btn-card-secondary btn-project-detail" data-project="netpulse">
-                  <i class="fa-solid fa-circle-info"></i> Detalhes
-                </button>
-                <a href="https://github.com/Carlosdsa2005" target="_blank" rel="noopener noreferrer"
-                  class="btn btn-card-primary">
-                  <i class="fa-brands fa-github"></i> Código
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Card 3: Visualizador de Árvores AVL Interativo -->
-          <article class="project-card glass-card fade-in" data-category="algorithms">
-            <div class="project-banner">
-              <div class="project-banner-overlay"></div>
-              <div class="project-icon-large">
-                <i class="fa-solid fa-sitemap"></i>
-              </div>
-              <span class="project-type-badge">Computação Visual</span>
-            </div>
-
-            <div class="project-content">
-              <h3 class="project-title">Visualizador de Árvores AVL</h3>
-              <p class="project-description">
-                Simulador gráfico interativo de árvores binárias auto-balanceáveis. Demonstra visualmente nós, alturas e
-                o processo passo a passo das rotações simples (LL/RR) e duplas (LR/RL).
-              </p>
-
-              <div class="project-tech-stack">
-                <span class="tech-badge"><i class="fa-brands fa-js"></i> JavaScript</span>
-                <span class="tech-badge"><i class="fa-solid fa-bezier-curve"></i> Canvas API</span>
-                <span class="tech-badge"><i class="fa-brands fa-html5"></i> HTML5</span>
-                <span class="tech-badge"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
-              </div>
-
-              <div class="project-actions">
-                <button type="button" class="btn btn-card-secondary btn-project-detail" data-project="avl">
-                  <i class="fa-solid fa-circle-info"></i> Detalhes
-                </button>
-                <a href="https://github.com/Carlosdsa2005" target="_blank" rel="noopener noreferrer"
-                  class="btn btn-card-primary">
-                  <i class="fa-brands fa-github"></i> Código
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Card 4: Portfólio Web Pessoal -->
-          <article class="project-card glass-card fade-in" data-category="web">
-            <div class="project-banner">
-              <div class="project-banner-overlay"></div>
-              <div class="project-icon-large">
-                <i class="fa-solid fa-laptop-code"></i>
-              </div>
-              <span class="project-type-badge">Front-End & UI/UX</span>
-            </div>
-
-            <div class="project-content">
-              <h3 class="project-title">Portfólio Web Tecnológico</h3>
-              <p class="project-description">
-                Interface moderna com estética Glassmorphism, terminal interativo via JavaScript puro, animação com
-                Canvas de nós quânticos, sistema dinâmico de filtros e total responsividade.
-              </p>
-
-              <div class="project-tech-stack">
-                <span class="tech-badge"><i class="fa-brands fa-html5"></i> HTML5</span>
-                <span class="tech-badge"><i class="fa-brands fa-css3-alt"></i> Vanilla CSS</span>
-                <span class="tech-badge"><i class="fa-brands fa-js"></i> JavaScript</span>
-                <span class="tech-badge"><i class="fa-solid fa-mobile-screen"></i> Responsivo</span>
-              </div>
-
-              <div class="project-actions">
-                <button type="button" class="btn btn-card-secondary btn-project-detail" data-project="portfolio">
-                  <i class="fa-solid fa-circle-info"></i> Detalhes
-                </button>
-                <a href="#hero" class="btn btn-card-primary">
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
+                  <i class="fa-brands fa-github"></i> GitHub
                 </a>
               </div>
             </div>
@@ -595,7 +747,7 @@
                 </div>
                 <div class="direct-contact-details">
                   <span class="direct-label">E-mail Profissional</span>
-                  <a href="mailto:carlos2005@gmail.com" class="direct-link"
+                  <a href="mailto:carlosdsa2005@gmail.com" class="direct-link"
                     id="contactEmailDisplay">carlosdsa2005@gmail.com</a>
                 </div>
                 <button type="button" class="btn-copy-email" id="btnCopyEmail" title="Copiar e-mail"
@@ -620,14 +772,14 @@
               </a>
 
               <!-- LinkedIn -->
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+              <a href="https://www.linkedin.com/in/carlos-daniel-gomes-de-sa-7217b1289" target="_blank" rel="noopener noreferrer"
                 class="direct-contact-item glass-card direct-contact-interactive">
                 <div class="direct-contact-icon linkedin-icon">
                   <i class="fa-brands fa-linkedin-in"></i>
                 </div>
                 <div class="direct-contact-details">
                   <span class="direct-label">LinkedIn</span>
-                  <span class="direct-link">Conectar no perfil profissional</span>
+                  <span class="direct-link">carlos-daniel-gomes-de-sa-7217b1289</span>
                 </div>
                 <i class="fa-solid fa-arrow-up-right-from-square direct-arrow"></i>
               </a>
@@ -717,7 +869,7 @@
           infraestrutura sólida.</p>
 
         <div class="footer-social-links">
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon"
+          <a href="https://www.linkedin.com/in/carlos-daniel-gomes-de-sa-7217b1289" target="_blank" rel="noopener noreferrer" class="social-icon"
             aria-label="LinkedIn">
             <i class="fa-brands fa-linkedin-in"></i>
           </a>
@@ -725,7 +877,7 @@
             aria-label="GitHub">
             <i class="fa-brands fa-github"></i>
           </a>
-          <a href="mailto:carlosdaniel.sa.dev@gmail.com" class="social-icon" aria-label="E-mail">
+          <a href="mailto:carlosdsa2005@gmail.com" class="social-icon" aria-label="E-mail">
             <i class="fa-solid fa-envelope"></i>
           </a>
           <a href="https://wa.me/5527998184143" target="_blank" rel="noopener noreferrer" class="social-icon"
@@ -773,10 +925,10 @@
           <p class="cv-headline">Estudante de Ciência da Computação (UVV) | Suporte de TI na Secretaria de Saúde</p>
           <div class="cv-contact-inline">
             <span><i class="fa-solid fa-location-dot"></i> Vila Velha - ES</span>
-            <span><i class="fa-solid fa-envelope"></i> carlosdaniel.sa.dev@gmail.com</span>
+            <span><i class="fa-solid fa-envelope"></i> carlosdsa2005@gmail.com</span>
             <span><i class="fa-brands fa-whatsapp"></i> (27) 99818-4143</span>
             <span><i class="fa-brands fa-github"></i> github.com/Carlosdsa2005</span>
-            <span><i class="fa-brands fa-linkedin"></i> linkedin.com</span>
+            <span><i class="fa-brands fa-linkedin"></i> linkedin.com/in/carlos-daniel-gomes-de-sa-7217b1289</span>
           </div>
         </div>
 
